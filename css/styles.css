@@ -98,6 +98,7 @@ body {
     cursor: pointer;
     width: 300px;
     font-size: 0.8em;
+    transition: all 500ms;
 }
 .bloc-fonction a:hover {
     color: #9356dc;
@@ -175,6 +176,21 @@ article {
     margin-top: -70px;
     margin-left: 75%;
 }
+.coeur-rose {
+    background-image: linear-gradient(to bottom left, #9356dc, #fd95e0 );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 30px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 75%;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+}
+.coeur-rose:hover {
+    opacity: 1;
+}
 
 /*footer*/
 footer {
@@ -219,6 +235,10 @@ footer li {
 .fa-arrow-left {
     font-size: 26px;
     color: black;
+    transition: all 500ms ease-in-out;
+}
+.fa-arrow-left:hover {
+    color: #9356dc;
 }
 .retour a {
     margin-left: 20px;
@@ -259,6 +279,21 @@ footer li {
     font-family: 'Shrikhand', sans-serif;
     font-weight: lighter;
     font-size: 26px;
+}
+.aime-pas {
+    position: absolute;
+}
+.aime {
+    background-image: linear-gradient(to bottom left, #9356dc, #fd95e0 );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+} 
+.aime:hover {
+    opacity: 1;
 }
 .repas h2 {
     font-size: 20px;
