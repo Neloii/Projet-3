@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+
 /*chargement*/
 .loader {
     position: fixed;
@@ -11,7 +12,8 @@ body {
     height: 50px;
     margin-top: -50px;
     border: 10px solid #dddd;
-    border-top-color: #9356dc;
+    border-top-color: #54dab8;
+    border-bottom-color: #e473c4;
     border-radius: 50%;
     animation: loader 3s ease-in 1 forwards;
     z-index: 2;
@@ -20,8 +22,7 @@ body {
 
 .loaderbg {
     position: fixed;
-    margin-top: -350px;
-    margin-left: -10px;
+    margin-top: -320px;
     width: 100vw;
     height: 100vh;
     background-color: rgb(104, 104, 104);
@@ -72,10 +73,13 @@ body {
     font-size: 16px;
     color: #555555;
 }
+h1 {
+    margin-bottom: 0px;
+}
 .location {
     margin-top: -11px;
     width: 100vw;
-    background-color: #dfdfdf;
+    background-color: #e9e9e9;
     box-shadow: 0 -2px 1px #c2c2c2;
 }
 .fa-location-dot {
@@ -83,8 +87,9 @@ body {
     padding-right: 10px;
 }
 .description {
-    margin: 40px;
+    padding: 40px;
     text-align: center;
+    background-color: whitesmoke;
 }
 .h2-home {
     font-size: 1.4em;
@@ -115,7 +120,7 @@ body {
 
 /*fonctionnement*/
 .fonction {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .fonction h3 {
@@ -146,6 +151,7 @@ body {
     width: 300px;
     font-size: 0.8em;
     transition: all 500ms;
+    background-color: whitesmoke;
 }
 .bloc-fonction a:hover {
     color: #9356dc;
@@ -168,11 +174,13 @@ body {
 .resto {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 40px;
 }
 article {
     margin-bottom: 20px;
     box-shadow:  0 5px 10px -2px #afafaf;
     border-radius: 20px;
+    background-color: whitesmoke;
 }
 .box-resto img {
     object-fit: cover;
@@ -182,7 +190,7 @@ article {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: white;
+    border-color: whitesmoke;
     border-radius: 20px;
     border-bottom-width: 60px;
 }
@@ -233,7 +241,7 @@ article {
     font-size: 30px;
     position: absolute;
     margin-top: -70px;
-    margin-left: 75%;
+    margin-left: 74.99%;
     transition: all 500ms ease-in-out;
     opacity: 0;
 }
@@ -284,7 +292,7 @@ footer li {
 .fa-arrow-left {
     font-size: 26px;
     color: black;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 .fa-arrow-left:hover {
     color: #9356dc;
@@ -311,7 +319,7 @@ footer li {
 /*main*/
 .corp {
     position: absolute;
-    background-color: white;
+    background-color: whitesmoke;
     padding-top: 20px;
     border-radius: 20px 20px 0 0;
     margin-top: -30px;
@@ -357,7 +365,7 @@ footer li {
     flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
-    background-color: white;
+    background-color: whitesmoke;
     gap: 10px;
 }
 .menu {
@@ -473,4 +481,87 @@ article h3 {
     width: 100vw;
     margin-top: 1400px;
     padding-bottom: 20px;
+}
+
+/*format pc*/
+@media screen and (min-width: 1100px){
+
+/*header*/
+.logo-location {
+    display: flex;
+    padding-top: 5px;
+    background-color: rgb(233, 233, 233);
+
+}
+.logo {
+    width: 20%;
+    box-shadow: 0px 2px 1px #c2c2c2;
+    margin: 0;
+    padding-left: 40px;
+}
+.location h1 {
+    font-size: large;
+    width: 77%;
+}
+.location {
+    box-shadow: 0px 2px 1px #c2c2c2;
+}
+.description {
+    background-color: white;
+}
+
+/*fonction*/
+.fonction {
+    margin-left: 50px;
+}
+.div-fonction {
+    display: flex;
+}
+.bloc-fonction {
+    margin-right: 20px;
+}
+
+/*cards restaurants*/
+.resto {
+    margin-left: 0;
+    padding-left: 50px;
+}
+.div-resto {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -20px;
+}
+.box-resto {
+    min-width: 47%;
+}
+.box-resto article {
+    transition: all 500ms;
+}
+.box-resto article:hover {
+    box-shadow: 0 0 30px #9356dc;
+}
+.new {
+    margin-left: 37%;
+}
+.coeur {
+    margin-left: 38%;
+    padding-left: 40px;
+}
+.coeur-rose {
+    margin-left: 38%;
+    padding-left: 40px;
+}
+/*footer*/
+footer {
+    margin-top: 40px;
+}
+footer h2 {
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: 20px;
+}
 }
