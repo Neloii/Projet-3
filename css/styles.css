@@ -15,7 +15,7 @@ body {
     border-top-color: #54dab8;
     border-bottom-color: #e473c4;
     border-radius: 50%;
-    animation: loader 3s ease-in 1 forwards;
+    animation: loader 2s ease-in 1 forwards;
     z-index: 2;
 }
 
@@ -27,7 +27,7 @@ body {
     height: 100vh;
     background-color: rgb(104, 104, 104);
     animation: opacityloader 1s forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
     opacity: 0.5;
     z-index: 1;
 }
@@ -323,7 +323,6 @@ footer li {
     padding-top: 20px;
     border-radius: 20px 20px 0 0;
     margin-top: -30px;
-    height: 100%;
     width: 100%;
 }
 .titre{
@@ -563,5 +562,44 @@ ul {
     justify-content: space-around;
     padding-left: 0;
     margin-top: 20px;
+}
+
+/*page*/
+.titre {
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.note {
+    margin-right: 80px;
+    margin-top: -20px;
+}
+.corp {
+    padding-bottom: 61px;
+}
+.section-repas {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+.repas {
+    width: 26.5%;
+}
+.bloc-repas {
+    flex-direction: column;
+    display: flex;
+}
+.menu {
+    transition: all 500ms;
+}
+.menu:hover {
+    box-shadow: 0 0 30px rgb(123, 206, 185);
+}
+.footer-page{
+    padding-right: -20px;
+    margin-top: 650px;
+}
+.footer-page-lne {
+    padding-right: -20px;
+    margin-top: 750px;
 }
 }
