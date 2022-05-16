@@ -226,7 +226,7 @@ article {
     font-size: 30px;
     position: absolute;
     margin-top: -70px;
-    margin-left: 75%;
+    margin-left: 74%;
 }
 .coeur-rose {
     background-image: linear-gradient(to bottom left, #9356dc, #fd95e0 );
@@ -236,7 +236,7 @@ article {
     font-size: 30px;
     position: absolute;
     margin-top: -70px;
-    margin-left: 74.99%;
+    margin-left: 74%;
     transition: all 500ms ease-in-out;
     opacity: 0;
 }
@@ -264,7 +264,7 @@ footer a {
     color: white;
 }
 footer a:hover {
-    color: #9356dc;
+    color: #54dab8;
 }
 footer li {
     list-style: none;
@@ -405,8 +405,8 @@ article h3 {
     background-color: #99E2D0;
     color: white;
     font-size: 26px;
-    padding: 26px 17px 25px 17px;
-    margin-top: -82px;
+    padding: 20px 13px 20px 13px;
+    margin-top: -70px;
     right: 0;
     transition: all 0.5s ease;
     display: none;
@@ -417,6 +417,7 @@ article h3 {
     transform-origin: 45px;
     padding: 0 13px;
     width: 25px;
+    height: 70px;
 }
 .menu:hover i {
     display: block;
@@ -457,7 +458,7 @@ from {
     transition: all 0.5s;
 }
 .menu:hover .prix {
-    margin-right: 12%;
+    margin-right: 20%;
 }
 .btn-rose-page {
     background: linear-gradient(180deg, #ff79da, #9356dc);
@@ -576,6 +577,7 @@ from {
     margin-left: 38%;
     padding-left: 40px;
 }
+
 /*footer*/
 footer {
     margin-top: 40px;
@@ -591,7 +593,6 @@ ul {
 }
 
 /*page*/
-/*main*/
 .titre {
     justify-content: space-between;
     margin-left: 80px;
@@ -620,6 +621,10 @@ ul {
 }
 .menu:hover {
     box-shadow: 0 0 30px rgb(123, 206, 185);
+}
+.menu:hover .check {
+    height: 82px;
+    margin-top: -82px;
 }
 
 /*footer*/
