@@ -11,6 +11,7 @@ body {
     width: 50px;
     height: 50px;
     margin-top: -50px;
+    margin-left: -25px;
     border: 10px solid #dddd;
     border-top-color: #54dab8;
     border-bottom-color: #e473c4;
@@ -20,7 +21,7 @@ body {
 }
 .loaderbg {
     position: fixed;
-    margin-top: -320px;
+    margin-top: -420px;
     width: 100vw;
     height: 100vh;
     background-color: rgb(104, 104, 104);
@@ -511,6 +512,14 @@ from {
 
 /*format pc*/
 @media screen and (min-width: 1100px){
+
+/*loader*/
+.loader {
+    margin-left: 0;
+}
+.loaderbg {
+    margin-top: -320px;
+}
 
 /*header*/
 .logo-location {
